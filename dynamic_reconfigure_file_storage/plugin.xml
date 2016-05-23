@@ -1,0 +1,7 @@
+<library path="lib/libdynamic_reconfigure_file_storage">
+  <class name="dynamic_reconfigure_file_storage/FileStorage" type="dynamic_reconfigure_file_storage::FileStorage" base_class_type="dynamic_reconfigure::BaseStorage">
+    <description>
+      A filesystem-based storage backend for dynamic reconfigure parameters.
+    </description>
+  </class>
+</library>

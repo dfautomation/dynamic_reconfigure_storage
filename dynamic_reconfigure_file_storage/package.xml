@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package>
+  <name>dynamic_reconfigure_file_storage</name>
+  <version>0.0.0</version>
+  <description>
+    The file storage backends stores the dynamic reconfigure parameters in the filesystem.
+  </description>
+  <author email="patrick-chin@dfautomation.com">Patrick Chin</author>
+  <maintainer email="patrick-chin@dfautomation.com">Patrick Chin</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://github.com/dfautomation/dynamic_reconfigure_storage</url>
+  <url type="bugtracker">https://github.com/dfautomation/dynamic_reconfigure_storage/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>boost</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>dynamic_reconfigure_storage_utils</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>roslint</build_depend>
+  
+  <run_depend>boost</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>dynamic_reconfigure_storage_utils</run_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+
+  <test_depend>rostest</test_depend>
+
+  <export>
+    <dynamic_reconfigure plugin="${prefix}/plugin.xml" />
+    <dynamic_reconfigure plugin_py="dynamic_reconfigure_file_storage:FileStorage" />
+  </export>
+</package>

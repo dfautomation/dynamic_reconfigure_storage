@@ -1,0 +1,7 @@
+<library path="lib/libdynamic_reconfigure_mysql_storage">
+  <class name="dynamic_reconfigure_mysql_storage/MysqlStorage" type="dynamic_reconfigure_mysql_storage::MysqlStorage" base_class_type="dynamic_reconfigure::BaseStorage">
+    <description>
+      A MySQL-based storage backend for dynamic reconfigure parameters.
+    </description>
+  </class>
+</library>

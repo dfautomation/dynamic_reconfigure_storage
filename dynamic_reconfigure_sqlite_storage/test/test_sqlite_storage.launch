@@ -1,0 +1,9 @@
+<launch>
+  <param name="dynamic_reconfigure_storage_backend" type="string" value="dynamic_reconfigure_sqlite_storage/SqliteStorage" />
+  <param name="dynamic_reconfigure_storage_url" type="string" value="sqlite:///tmp/dyncfg.db#dynamic_reconfigure_parameter" />
+  <param name="dynamic_reconfigure_storage_reset" type="bool" value="false" />
+
+  <node pkg="dynamic_reconfigure" type="dynamic_reconfigure-ref_server" name="ref_server" output="screen" />
+
+  <!-- Todo: storage consistency test -->
+</launch>

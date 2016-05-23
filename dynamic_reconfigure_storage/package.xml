@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>dynamic_reconfigure_storage</name>
+  <version>0.0.0</version>
+  <description>
+    The dynamic_reconfigure_storage meta package provides some basic storage backends for 
+    persisting the dynamic reconfigure parameters.
+  </description>
+  <author email="patrick-chin@dfautomation.com">Patrick Chin</author>
+  <maintainer email="patrick-chin@dfautomation.com">Patrick Chin</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://github.com/dfautomation/dynamic_reconfigure_storage</url>
+  <url type="bugtracker">https://github.com/dfautomation/dynamic_reconfigure_storage/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>dynamic_reconfigure_file_storage</run_depend>
+  <!-- Todo:
+  <run_depend>dynamic_reconfigure_mongodb_storage</run_depend>
+  -->
+  <run_depend>dynamic_reconfigure_mysql_storage</run_depend>
+  <run_depend>dynamic_reconfigure_sqlite_storage</run_depend>
+  <run_depend>dynamic_reconfigure_storage_utils</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

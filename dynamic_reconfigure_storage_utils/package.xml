@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>dynamic_reconfigure_storage_utils</name>
+  <version>0.0.0</version>
+  <description>
+    Common utility functions for storage backends.
+  </description>
+  <author email="patrick-chin@dfautomation.com">Patrick Chin</author>
+  <maintainer email="patrick-chin@dfautomation.com">Patrick Chin</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://github.com/dfautomation/dynamic_reconfigure_storage</url>
+  <url type="bugtracker">https://github.com/dfautomation/dynamic_reconfigure_storage/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roslint</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>python-yaml</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>yaml-cpp</run_depend>
+</package>

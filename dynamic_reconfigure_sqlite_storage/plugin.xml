@@ -1,0 +1,7 @@
+<library path="lib/libdynamic_reconfigure_sqlite_storage">
+  <class name="dynamic_reconfigure_sqlite_storage/SqliteStorage" type="dynamic_reconfigure_sqlite_storage::SqliteStorage" base_class_type="dynamic_reconfigure::BaseStorage">
+    <description>
+      A SQLite-based storage backend for dynamic reconfigure parameters.
+    </description>
+  </class>
+</library>

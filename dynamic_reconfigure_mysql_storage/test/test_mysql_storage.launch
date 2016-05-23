@@ -1,0 +1,9 @@
+<launch>
+  <param name="dynamic_reconfigure_storage_backend" type="string" value="dynamic_reconfigure_mysql_storage/MysqlStorage" />
+  <param name="dynamic_reconfigure_storage_url" type="string" value="mysql://root:@localhost/dyncfg#dynamic_reconfigure_parameter" />
+  <param name="dynamic_reconfigure_storage_reset" type="bool" value="false" />
+
+  <node pkg="dynamic_reconfigure" type="dynamic_reconfigure-ref_server" name="ref_server" output="screen" />
+
+  <!-- Todo: storage consistency test -->
+</launch>

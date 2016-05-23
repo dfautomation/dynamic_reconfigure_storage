@@ -1,0 +1,9 @@
+<launch>
+  <param name="dynamic_reconfigure_storage_backend_py" type="string" value="dynamic_reconfigure_file_storage:FileStorage" />
+  <param name="dynamic_reconfigure_storage_url" type="string" value="file:///tmp/dyncfg/" />
+  <param name="dynamic_reconfigure_storage_reset" type="bool" value="false" />
+
+  <node pkg="dynamic_reconfigure" type="testserver.py" name="testserver" output="screen" />
+
+  <!-- Todo: storage consistency test -->
+</launch>
