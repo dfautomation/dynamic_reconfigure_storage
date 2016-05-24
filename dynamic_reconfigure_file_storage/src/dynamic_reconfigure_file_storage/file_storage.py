@@ -53,7 +53,8 @@ class FileStorage(BaseStorage):
         else:
             self.file_path = os.path.join(
                 urllib.url2pathname(urlparse.urlparse(storage_url).path),
-                node_name.lstrip(os.path.sep) + '.yaml')
+                node_name.lstrip(os.path.sep),
+                'params.yaml')
             self.initialized = True
 
     def load_config(self, msg):

@@ -72,7 +72,7 @@ void FileStorage::initialize(std::string node_name, std::string storage_url)
   else
   {
     size_t start = protocol.length() - 1;  // copy the slash too
-    file_path_ = storage_url.substr(start) + (node_name + ".yaml");
+    file_path_ = storage_url.substr(start) + (node_name + "/params.yaml");
     initialized_ = true;
   }
 }
