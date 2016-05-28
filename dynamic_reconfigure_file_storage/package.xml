@@ -32,6 +32,6 @@
 
   <export>
     <dynamic_reconfigure plugin="${prefix}/plugin.xml" />
-    <dynamic_reconfigure plugin_py="dynamic_reconfigure_file_storage:FileStorage" />
+    <dynamic_reconfigure plugin_py="dynamic_reconfigure_file_storage.FileStorage" />
   </export>
 </package>

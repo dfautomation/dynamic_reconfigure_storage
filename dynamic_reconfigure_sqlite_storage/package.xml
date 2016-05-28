@@ -34,6 +34,6 @@
 
   <export>
     <dynamic_reconfigure plugin="${prefix}/plugin.xml" />
-    <dynamic_reconfigure plugin_py="dynamic_reconfigure_sqlite_storage:SqliteStorage" />
+    <dynamic_reconfigure plugin_py="dynamic_reconfigure_sqlite_storage.SqliteStorage" />
   </export>
 </package>
