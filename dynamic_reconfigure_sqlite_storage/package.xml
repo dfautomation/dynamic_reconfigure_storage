@@ -5,8 +5,8 @@
   <description>
     The SQLite storage backends stores the dynamic reconfigure parameters in a SQLite database.
   </description>
-  <author email="patrick-chin@dfautomation.com">Patrick Chin</author>
-  <maintainer email="patrick-chin@dfautomation.com">Patrick Chin</maintainer>
+  <author email="patrick@dfautomation.com">Patrick Chin</author>
+  <maintainer email="patrick@dfautomation.com">Patrick Chin</maintainer>
   <license>BSD</license>
   <url type="repository">https://github.com/dfautomation/dynamic_reconfigure_storage</url>
   <url type="bugtracker">https://github.com/dfautomation/dynamic_reconfigure_storage/issues</url>
