@@ -55,7 +55,7 @@ class MysqlStorage(BaseStorage):
             self.initialized = False
         else:
             hash_start = storage_url.find('#')
-            self.db_url = storage_url[:hash_start]
+            self.db_url = 'mysql+mysqldb://' + storage_url[8:hash_start]
 
             table_name = 'dynamic_reconfigure_parameter'
             if hash_start != -1:
