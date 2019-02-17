@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(dynamic_reconfigure_file_storage)
 
-find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure dynamic_reconfigure_storage_utils pluginlib roscpp roslaunch roslint)
+find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure dynamic_reconfigure_storage_utils pluginlib roscpp)
 find_package(Boost REQUIRED COMPONENTS filesystem)
 
 catkin_python_setup()
@@ -44,13 +44,15 @@ install(DIRECTORY include/${PROJECT_NAME}/
 #############
 
 if (CATKIN_ENABLE_TESTING)
-  find_package(rostest REQUIRED)
+  find_package(catkin REQUIRED COMPONENTS roslaunch roslint rostest)
   add_dependencies(tests dynamic_reconfigure-ref_server)
   add_rostest(test/test_file_storage.launch)
   add_rostest(test/test_file_storage_py.launch)
 
   set(ROSLINT_CPP_OPTS "--filter=-build/include_what_you_use,-runtime/references,-whitespace/braces,-whitespace/line_length")
+  set(ROSLINT_PYTHON_OPTS "--max-line-length=199" "--ignore=E128")
   roslaunch_add_file_check(test)
   roslint_cpp()
+  roslint_python()
   roslint_add_test()
 endif()
