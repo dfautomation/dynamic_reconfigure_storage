@@ -24,9 +24,7 @@
   <exec_depend>python-sqlalchemy</exec_depend>
   <exec_depend>rospy</exec_depend>
 
-  <test_depend>roslaunch</test_depend>
   <test_depend>roslint</test_depend>
-  <test_depend>rostest</test_depend>
 
   <export>
     <dynamic_reconfigure plugin="${prefix}/plugin.xml" />

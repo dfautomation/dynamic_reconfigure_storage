@@ -44,14 +44,9 @@ install(DIRECTORY include/${PROJECT_NAME}/
 #############
 
 if (CATKIN_ENABLE_TESTING)
-  find_package(catkin REQUIRED COMPONENTS roslaunch roslint rostest)
-  add_dependencies(tests dynamic_reconfigure-ref_server)
-  add_rostest(test/test_file_storage.launch)
-  add_rostest(test/test_file_storage_py.launch)
-
+  find_package(catkin REQUIRED COMPONENTS roslint)
   set(ROSLINT_CPP_OPTS "--filter=-build/include_what_you_use,-runtime/references,-whitespace/braces,-whitespace/line_length")
   set(ROSLINT_PYTHON_OPTS "--max-line-length=199" "--ignore=E128")
-  roslaunch_add_file_check(test)
   roslint_cpp()
   roslint_python()
   roslint_add_test()
