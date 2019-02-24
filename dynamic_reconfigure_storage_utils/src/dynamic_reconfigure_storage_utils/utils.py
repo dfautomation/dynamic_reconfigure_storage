@@ -63,28 +63,28 @@ def deserializeFromYaml(yaml_str):
         for p in cfg['bools']:
             try:
                 msg.bools.append(BoolParameter(p['name'], p['value']))
-            except:
+            except Exception:
                 pass
 
     if 'ints' in cfg and isinstance(cfg['ints'], list):
         for p in cfg['ints']:
             try:
                 msg.ints.append(IntParameter(p['name'], p['value']))
-            except:
+            except Exception:
                 pass
 
     if 'strs' in cfg and isinstance(cfg['strs'], list):
         for p in cfg['strs']:
             try:
                 msg.strs.append(StrParameter(p['name'], p['value']))
-            except:
+            except Exception:
                 pass
 
     if 'doubles' in cfg and isinstance(cfg['doubles'], list):
         for p in cfg['doubles']:
             try:
                 msg.doubles.append(DoubleParameter(p['name'], p['value']))
-            except:
+            except Exception:
                 pass
 
     return msg
