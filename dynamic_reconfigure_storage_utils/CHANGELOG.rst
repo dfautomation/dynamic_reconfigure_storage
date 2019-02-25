@@ -2,8 +2,8 @@
 Changelog for package dynamic_reconfigure_storage_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2019-02-25)
+------------------
 * Fix bare except statement.
 * Contributors: Patrick Chin
 

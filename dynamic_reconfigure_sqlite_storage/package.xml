@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>dynamic_reconfigure_sqlite_storage</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>
     The SQLite storage backends stores the dynamic reconfigure parameters in a SQLite database.
   </description>
