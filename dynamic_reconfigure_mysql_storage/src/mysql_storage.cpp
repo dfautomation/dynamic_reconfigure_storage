@@ -167,6 +167,7 @@ void MysqlStorage::loadConfig(dynamic_reconfigure::Config & msg)
   if (res) delete res;
   if (pstmt) delete pstmt;
   if (conn) delete conn;
+  if (driver) driver->threadEnd();
 }
 
 void MysqlStorage::saveConfig(const dynamic_reconfigure::Config & msg)
@@ -209,6 +210,7 @@ void MysqlStorage::saveConfig(const dynamic_reconfigure::Config & msg)
   if (pstmt) delete pstmt;
   if (stmt) delete stmt;
   if (conn) delete conn;
+  if (driver) driver->threadEnd();
 }
 
 }  // namespace dynamic_reconfigure_mysql_storage
