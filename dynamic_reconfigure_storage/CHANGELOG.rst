@@ -2,6 +2,9 @@
 Changelog for package dynamic_reconfigure_storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.1 (2019-02-25)
 ------------------
 

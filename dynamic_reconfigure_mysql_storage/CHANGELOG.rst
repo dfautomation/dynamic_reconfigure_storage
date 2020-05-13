@@ -2,6 +2,11 @@
 Changelog for package dynamic_reconfigure_mysql_storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Ensure proper cleanup of MySQL driver.
+* Contributors: Patrick Chin
+
 0.1.1 (2019-02-25)
 ------------------
 
