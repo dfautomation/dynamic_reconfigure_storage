@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>dynamic_reconfigure_mysql_storage</name>
   <version>0.1.2</version>
   <description>
@@ -19,9 +19,11 @@
   <depend>libmysqlcppconn-dev</depend>
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
-  
-  <exec_depend>python-mysqldb</exec_depend>
-  <exec_depend>python-sqlalchemy</exec_depend>
+
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-mysqldb</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-mysqldb</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-sqlalchemy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-sqlalchemy</exec_depend>
   <exec_depend>rospy</exec_depend>
 
   <test_depend>roslint</test_depend>
