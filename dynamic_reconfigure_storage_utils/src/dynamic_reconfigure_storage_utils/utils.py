@@ -53,7 +53,11 @@ def serializeToYaml(msg):
 
 
 def deserializeFromYaml(yaml_str):
-    cfg = yaml.load(yaml_str)
+    try:
+        cfg = yaml.full_load(yaml_str)
+    except AttributeError:
+        cfg = yaml.load(yaml_str)
+
     if not isinstance(cfg, dict):
         return None
 
