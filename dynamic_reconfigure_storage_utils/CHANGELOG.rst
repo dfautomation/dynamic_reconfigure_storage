@@ -2,6 +2,11 @@
 Changelog for package dynamic_reconfigure_storage_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update python3 dependency and fix deprecated yaml load.
+* Contributors: Farhan Mustar
+
 0.1.2 (2020-05-14)
 ------------------
 

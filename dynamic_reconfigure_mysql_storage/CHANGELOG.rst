@@ -2,6 +2,11 @@
 Changelog for package dynamic_reconfigure_mysql_storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update package dependencies to support Python 3.
+* Contributors: Patrick Chin
+
 0.1.2 (2020-05-14)
 ------------------
 * Ensure proper cleanup of MySQL driver.

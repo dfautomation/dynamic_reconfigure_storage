@@ -2,6 +2,9 @@
 Changelog for package dynamic_reconfigure_sqlite_storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.2 (2020-05-14)
 ------------------
 
