@@ -37,8 +37,12 @@ from dynamic_reconfigure_storage_utils.utils import *
 import os
 import rospy
 import sqlite3
-import urllib
-import urlparse
+try:
+    from urllib.parse import urlparse
+    from urllib.request import url2pathname
+except Exception:
+    from urlparse import urlparse
+    from urllib import url2pathname
 
 
 class SqliteStorage(BaseStorage):
@@ -52,8 +56,8 @@ class SqliteStorage(BaseStorage):
             rospy.logerr('SQLite storage URL must start with "sqlite:///". Storage backend is not used.')
             self.initialized = False
         else:
-            u = urlparse.urlparse(storage_url)
-            self.db_path = urllib.url2pathname(u.path)
+            u = urlparse(storage_url)
+            self.db_path = url2pathname(u.path)
             self.table_name = u.fragment or 'dynamic_reconfigure_parameter'
             self.node_name = node_name
             self.initialized = True

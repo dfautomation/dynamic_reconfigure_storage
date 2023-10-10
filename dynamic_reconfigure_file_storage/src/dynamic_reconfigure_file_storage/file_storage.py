@@ -36,8 +36,12 @@ from dynamic_reconfigure.storage import BaseStorage
 from dynamic_reconfigure_storage_utils.utils import *
 import os
 import rospy
-import urllib
-import urlparse
+try:
+    from urllib.parse import urlparse
+    from urllib.request import url2pathname
+except Exception:
+    from urlparse import urlparse
+    from urllib import url2pathname
 
 
 class FileStorage(BaseStorage):
@@ -52,7 +56,7 @@ class FileStorage(BaseStorage):
             self.initialized = False
         else:
             self.file_path = os.path.join(
-                urllib.url2pathname(urlparse.urlparse(storage_url).path),
+                url2pathname(urlparse(storage_url).path),
                 node_name.lstrip(os.path.sep),
                 'params.yaml')
             self.initialized = True
