@@ -2,6 +2,11 @@
 Changelog for package dynamic_reconfigure_sqlite_storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix python3 imports.
+* Contributors: Patrick Chin
+
 0.1.3 (2023-09-26)
 ------------------
 
